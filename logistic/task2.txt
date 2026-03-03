@@ -1,0 +1,3 @@
+Choose any dataset and apply to this dataset polynomial regression(find optimal number of polynoms), stardardScaler.
+
+Check which type of regularization fits your data and choose optimal parameters for them using cross validation.
