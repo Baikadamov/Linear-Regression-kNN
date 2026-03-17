@@ -1,0 +1,13 @@
+1. Choose any dataset for binary classification task
+
+2. Perform data preprocessing and EDA on your data
+
+3. Train logistic regression to make predictions on new data for classification. Apply Cross Validation
+
+4. Assess your model: confusion matrix, classification report, AUC-ROC
+
+5. Determine the best threshold for your data
+
+6. Determine whether Precision or Recall is important for your data.
+
+Bonus: you can choose train multiclass regression(3 points)

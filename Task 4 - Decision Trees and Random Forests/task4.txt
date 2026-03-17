@@ -1,0 +1,31 @@
+Task 4 - Decision Trees and Random Forests.
+Срок 17 Мар в 21:10 Баллы 15
+Part 1
+
+1. Choose any dataset for multi-class classification
+
+2. Perform data preprocessing and EDA on your data
+
+3. Train decision  tree and random forest algorithms to make predictions on new data for classification. Apply Cross Validation(choose optimal tree pruning values, tree numbers in random forest)
+
+4. Assess your model: confusion matrix, classification report, AUC-ROC
+
+5. Determine the best threshold for your data
+
+6. Determine whether Precision or Recall is important for your data.
+
+7. Determine the most significant feature among all features
+
+ 
+
+Part 2
+
+1. Choose any dataset for regression
+
+2. Perform data preprocessing and EDA on your data
+
+3. Train decision  tree and random forest algorithms to make predictions on new data. Apply Cross Validation(choose optimal tree pruning values, tree numbers in random forest)
+
+4. Assess your model: MAE, RMSE, MSE, residuals
+
+5. Determine the most significant feature among all features
