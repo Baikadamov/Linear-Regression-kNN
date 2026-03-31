@@ -3,7 +3,11 @@
     "allow": [
       "Bash(cd:*)",
       "Bash(ls:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(source .venv/Scripts/activate)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(source ../.venv/bin/activate)",
+      "Bash(jupyter nbconvert:*)"
     ]
   }
 }
