@@ -1,0 +1,40 @@
+# Черновик: ручной перебор параметров через cross_val_score
+
+# --- Decision Tree: подбор оптимальной глубины ---
+depths = range(1, 15)
+cv_scores_dt = []
+
+for depth in depths:
+    dt_tmp = DecisionTreeClassifier(max_depth=depth, random_state=42)
+    scores = cross_val_score(dt_tmp, X_train, y_train, cv=5, scoring='accuracy')
+    cv_scores_dt.append(scores.mean())
+
+best_depth = list(depths)[np.argmax(cv_scores_dt)]
+print(f"Лучшая глубина дерева: {best_depth}, точность CV: {max(cv_scores_dt):.4f}")
+
+plt.plot(depths, cv_scores_dt, marker='o')
+plt.xlabel("max_depth")
+plt.ylabel("CV Accuracy")
+plt.title("Подбор глубины дерева (Cross Validation)")
+plt.grid()
+plt.show()
+
+
+# --- Random Forest: подбор оптимального числа деревьев ---
+n_estimators_list = [10, 20, 50, 100, 150, 200]
+cv_scores_rf = []
+
+for n in n_estimators_list:
+    rf_tmp = RandomForestClassifier(n_estimators=n, random_state=42)
+    scores = cross_val_score(rf_tmp, X_train, y_train, cv=5, scoring='accuracy')
+    cv_scores_rf.append(scores.mean())
+
+best_n = n_estimators_list[np.argmax(cv_scores_rf)]
+print(f"Лучшее количество деревьев: {best_n}, точность CV: {max(cv_scores_rf):.4f}")
+
+plt.plot(n_estimators_list, cv_scores_rf, marker='o', color='green')
+plt.xlabel("n_estimators")
+plt.ylabel("CV Accuracy")
+plt.title("Подбор числа деревьев в Random Forest (Cross Validation)")
+plt.grid()
+plt.show()
