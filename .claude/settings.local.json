@@ -8,7 +8,8 @@
       "Bash(source .venv/bin/activate)",
       "Bash(source ../.venv/bin/activate)",
       "Bash(jupyter nbconvert:*)",
-      "Bash(source /home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/activate)"
+      "Bash(source /home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/activate)",
+      "Bash(../.venv/Scripts/python.exe -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 knn_assignment_0_01.ipynb --output knn_assignment_0_01.ipynb)"
     ]
   }
 }
