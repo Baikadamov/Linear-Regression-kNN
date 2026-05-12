@@ -1,0 +1,42 @@
+NLP
+Срок 12 Май в 21:10 Баллы 15
+Sentiment Analysis Classification with Different Vectorizers and Models
+
+In this assignment, you need to build a Sentiment Analysis classification model for social media text using:
+
+Vectorizers:
+* TfidfVectorizer
+* CountVectorizer (Bag of Words)
+
+Classification ML Models:
+* XGBClassifier
+* CatBoostClassifier
+
+You need to perform multiclass classification on 3 sentiment labels:
+* positive
+* negative
+* neutral
+
+Dataset (Sentiment Analysis Dataset from Kaggle): https://www.kaggle.com/datasets/mdismielhossenabir/sentiment-analysisLinks to an external site.
+
+Goal:
+* Compare combinations of vectorizers and models;
+
+Main tasks:
+* Evaluate using: Accuracy and Weighted F1-Score;
+* Build a final leaderboard;
+* Select and analyze the best model.
+
+You can use materials from machine-learning-in-nlp-bag-of-words.ipynb
+
+ 
+
+Tasks for Transformers from HuggingFace
+
+For performing these tasks consider multilungual case(Kazakh, Russian)
+
+1.1 Collect review data from 2Gis about any type of service in Almaty(Bakery, Cafeteria and etc.), data can contain several companies.  Perform on this data sentiment analysis. And perform complex analysis for companies on the basis of sentiment-type label.
+
+1. 2. For reviews determine main topics(for example: service, taste and etc.) and perform zero-shot classification of reviews related to these topics and analyze taken results.
+
+2. You are given several  files with interview texts. From these texts retrieve topics automatically using NLP models. Build adjacency matrix of files which have common topics.

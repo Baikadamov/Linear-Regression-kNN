@@ -9,7 +9,14 @@
       "Bash(source ../.venv/bin/activate)",
       "Bash(jupyter nbconvert:*)",
       "Bash(source /home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/activate)",
-      "Bash(../.venv/Scripts/python.exe -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 knn_assignment_0_01.ipynb --output knn_assignment_0_01.ipynb)"
+      "Bash(../.venv/Scripts/python.exe -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 knn_assignment_0_01.ipynb --output knn_assignment_0_01.ipynb)",
+      "Bash(pip list *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/pip list *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/pip install *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/jupyter nbconvert *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3 -c ' *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3 *)"
     ]
   }
 }
