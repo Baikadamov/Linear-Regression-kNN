@@ -16,7 +16,25 @@
       "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/jupyter nbconvert *)",
       "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3 -c ' *)",
       "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3)",
-      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3 *)"
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/python3 *)",
+      "Bash(grep -E \"\\(__pycache__|\\\\.pyc$|\\\\.ipynb_checkpoints|catboost_info|\\\\.DS_Store\\)\")",
+      "Bash(git rm *)",
+      "Bash(xargs -0 git rm --cached)",
+      "Bash(grep -cE \"\\(__pycache__|\\\\.pyc$|\\\\.ipynb_checkpoints|\\\\.DS_Store|catboost_info\\)\")",
+      "Bash(grep -cE \"\\(__pycache__|\\\\.pyc$|\\\\.ipynb_checkpoints|\\\\.DS_Store\\)\")",
+      "Bash(grep -E \"\\(__pycache__|\\\\.pyc$|\\\\.ipynb_checkpoints|\\\\.DS_Store\\)\")",
+      "Bash(awk '{print $1}')",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git ls-tree *)",
+      "Bash(grep -cE \"\\(__pycache__|\\\\.pyc$|\\\\.ipynb_checkpoints|catboost_info|\\\\.DS_Store\\)\")",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/pip show *)",
+      "Bash(git branch *)",
+      "Bash(/home/baikadamov/Projects/Linear-Regression-kNN/.venv/bin/git-filter-repo --invert-paths --path .venv --path-glob '**/__pycache__/' --path-glob '**/.ipynb_checkpoints/' --path-glob '**/catboost_info/' --path-glob '**/*.pyc' --path-glob '**/.DS_Store' --force)",
+      "Bash(git rev-list *)",
+      "Bash(git cat-file *)",
+      "Bash(git remote *)"
     ]
   }
 }
